@@ -1,13 +1,13 @@
 <?php
 
-use CraigPaul\Moneris\Crypt;
-use CraigPaul\Moneris\Customer;
-use CraigPaul\Moneris\CreditCard;
+use PixelPenguin\Moneris\Crypt;
+use PixelPenguin\Moneris\Customer;
+use PixelPenguin\Moneris\CreditCard;
 
 class CreditCardTest extends TestCase
 {
     /**
-     * @var \CraigPaul\Moneris\CreditCard
+     * @var \PixelPenguin\Moneris\CreditCard
      */
     protected $card;
 

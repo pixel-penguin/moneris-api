@@ -1,11 +1,11 @@
 <?php
 
-namespace CraigPaul\Moneris;
+namespace PixelPenguin\Moneris;
 
 use GuzzleHttp\Client;
 
 /**
- * CraigPaul\Moneris\Gateway
+ * PixelPenguin\Moneris\Gateway
  *
  * @property bool $avs
  * @property-read array $avsCodes
@@ -14,7 +14,7 @@ use GuzzleHttp\Client;
  * @property-read string $environment
  * @property-read string $id
  * @property-read string $token
- * @property \CraigPaul\Moneris\Transaction $transaction
+ * @property \PixelPenguin\Moneris\Transaction $transaction
  * @property bool $cof
  */
 class Gateway
@@ -69,7 +69,7 @@ class Gateway
     /**
      * The current transaction.
      *
-     * @var \CraigPaul\Moneris\Transaction
+     * @var \PixelPenguin\Moneris\Transaction
      */
     protected $transaction;
 
@@ -99,11 +99,11 @@ class Gateway
     /**
      * Capture a pre-authorized a transaction.
      *
-     * @param \CraigPaul\Moneris\Transaction|string $transaction
+     * @param \PixelPenguin\Moneris\Transaction|string $transaction
      * @param string|null $order
      * @param mixed|null $amount
      *
-     * @return \CraigPaul\Moneris\Response
+     * @return \PixelPenguin\Moneris\Response
      */
     public function capture($transaction, $order = null, $amount = null)
     {
@@ -129,7 +129,7 @@ class Gateway
     /**
      * Create a new Vault instance.
      *
-     * @return \CraigPaul\Moneris\Vault
+     * @return \PixelPenguin\Moneris\Vault
      */
     public function cards()
     {
@@ -155,7 +155,7 @@ class Gateway
      *
      * @param array $params
      *
-     * @return \CraigPaul\Moneris\Response
+     * @return \PixelPenguin\Moneris\Response
      */
     public function preauth(array $params = [])
     {
@@ -174,7 +174,7 @@ class Gateway
      *
      * @param array $params
      *
-     * @return \CraigPaul\Moneris\Response
+     * @return \PixelPenguin\Moneris\Response
      */
     public function purchase(array $params = [])
     {
@@ -191,9 +191,9 @@ class Gateway
     /**
      * Process a transaction through the Moneris API.
      *
-     * @param \CraigPaul\Moneris\Transaction $transaction
+     * @param \PixelPenguin\Moneris\Transaction $transaction
      *
-     * @return \CraigPaul\Moneris\Response
+     * @return \PixelPenguin\Moneris\Response
      */
     protected function process(Transaction $transaction)
     {
@@ -205,11 +205,11 @@ class Gateway
     /**
      * Refund a transaction.
      *
-     * @param \CraigPaul\Moneris\Transaction|string $transaction
+     * @param \PixelPenguin\Moneris\Transaction|string $transaction
      * @param string|null $order
      * @param mixed|null $amount
      *
-     * @return \CraigPaul\Moneris\Response
+     * @return \PixelPenguin\Moneris\Response
      */
     public function refund($transaction, $order = null, $amount = null)
     {
@@ -237,7 +237,7 @@ class Gateway
      *
      * @param array|null $params
      *
-     * @return \CraigPaul\Moneris\Transaction
+     * @return \PixelPenguin\Moneris\Transaction
      */
     protected function transaction(array $params = null)
     {
@@ -253,7 +253,7 @@ class Gateway
      *
      * @param array $params
      *
-     * @return \CraigPaul\Moneris\Response
+     * @return \PixelPenguin\Moneris\Response
      */
     public function verify(array $params = [])
     {
@@ -270,10 +270,10 @@ class Gateway
     /**
      * Void a transaction.
      *
-     * @param \CraigPaul\Moneris\Transaction|string $transaction
+     * @param \PixelPenguin\Moneris\Transaction|string $transaction
      * @param string|null $order
      *
-     * @return \CraigPaul\Moneris\Response
+     * @return \PixelPenguin\Moneris\Response
      */
     public function void($transaction, $order = null)
     {

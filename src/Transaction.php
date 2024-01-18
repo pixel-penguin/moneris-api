@@ -1,14 +1,14 @@
 <?php
 
-namespace CraigPaul\Moneris;
+namespace PixelPenguin\Moneris;
 
 use SimpleXMLElement;
 
 /**
- * CraigPaul\Moneris\Gateway
+ * PixelPenguin\Moneris\Gateway
  *
  * @property-read array $errors
- * @property-read \CraigPaul\Moneris\Gateway $gateway
+ * @property-read \PixelPenguin\Moneris\Gateway $gateway
  * @property-read array $params
  * @property \SimpleXMLElement|null $response
  */
@@ -30,7 +30,7 @@ class Transaction
     /**
      * The Gateway instance.
      *
-     * @var \CraigPaul\Moneris\Gateway
+     * @var \PixelPenguin\Moneris\Gateway
      */
     protected $gateway;
 
@@ -49,7 +49,7 @@ class Transaction
     /**
      * Create a new Transaction instance.
      *
-     * @param \CraigPaul\Moneris\Gateway $gateway
+     * @param \PixelPenguin\Moneris\Gateway $gateway
      * @param array $params
      */
     public function __construct(Gateway $gateway, array $params = [])
@@ -610,7 +610,7 @@ class Transaction
      *
      * @param \SimpleXMLElement $result
      *
-     * @return \CraigPaul\Moneris\Response
+     * @return \PixelPenguin\Moneris\Response
      */
     public function validate(SimpleXMLElement $result)
     {

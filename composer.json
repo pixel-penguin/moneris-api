@@ -1,12 +1,12 @@
 {
-    "name": "craigpaul/moneris-api",
+    "name": "pixelpenguin/moneris-api",
     "description": "An easier way to consume the (truly awful) Moneris eSELECTplus API.",
     "keywords": ["moneris", "eselectplus", "api"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Craig Paul",
-            "email": "craig@townfolio.co"
+            "name": "Gerrit Vermeulen",
+            "email": "gerrit@pixel-penguin.com"
         }
     ],
     "require": {
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CraigPaul\\Moneris\\": "src/"
+            "PixelPenguin\\Moneris\\": "src/"
         }
     },
     "autoload-dev": {

@@ -1,6 +1,6 @@
 <?php
 
-use CraigPaul\Moneris\Moneris;
+use PixelPenguin\Moneris\Moneris;
 
 class TestCase extends PHPUnit_Framework_TestCase
 {
